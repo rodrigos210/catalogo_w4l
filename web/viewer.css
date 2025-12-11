@@ -7485,3 +7485,16 @@ dialog :link{
     display:none;
   }
 }
+
+/* Horizontal booklet view */
+#viewerContainer {
+    overflow-x: auto;    /* horizontal scroll */
+    overflow-y: hidden;  /* hide vertical scroll */
+    white-space: nowrap;  /* keep pages in one line */
+}
+
+.page {
+    display: inline-block;   /* pages side by side */
+    vertical-align: top;
+    margin: 0 2px;           /* optional spacing between pages */
+}
